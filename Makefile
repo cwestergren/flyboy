@@ -2,7 +2,7 @@
 CROSS ?= /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi
 CC := $(CROSS)-gcc
 
-PROJECTNAME := iotest
+PROJECTNAME := flyboy
 
 CFLAGS := -g -O0 -Wall -mlittle-endian -mthumb -mcpu=cortex-m4 -mthumb-interwork -mfpu=fpv4-sp-d16 -mfloat-abi=softfp
 CFLAGS += -fdata-sections -ffunction-sections
