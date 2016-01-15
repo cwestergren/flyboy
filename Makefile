@@ -1,4 +1,3 @@
-#CROSS ?= /opt/arm-2013.05/bin/arm-none-eabi
 CROSS ?= /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi
 CC := $(CROSS)-gcc
 
@@ -39,7 +38,7 @@ all: $(PROJECTNAME).bin
 
 clean:
 	rm -f $(PROJECTNAME).bin $(PROJECTNAME).elf $(PROJECTNAME).map $(OBJS) $(ALL_DEPS)
-
+	
 flash: $(PROJECTNAME).bin $(PROJECTNAME).elf
 	openocd -f scripts/stlink-v2.cfg -f scripts/stm32f4x.cfg \
 		-c init \

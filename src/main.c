@@ -10,10 +10,10 @@
 
 osThreadId defaultTaskHandle;
 
-extern uint32 stopModeEntrys;
+//extern uint32 stopModeEntrys;
 
 
-void StartDefaultTask(void const * argument)
+void StartDefaultTask(void const *argument)
 {
 	leds_init();
 
